@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hack the Cloud 2020
+    </title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        background: #fffdf2;
+      }
+      h1{
+        padding: 20px;
+        background: #fef5b9;
+        margin: 0;
+        font-family: Arnoldboecklin, fantasy;
+        font-size: 65px;
+      }
+      img.logo{
+        width: 100px;
+        border-radius: 100px;
+        margin: 30px 0px 0px 0px;
+      }
+      img.headerImg {
+        margin: 45px;
+        border-radius: 20px;
+      }
+      h2.missionHead{
+        margin: 10px 250px 0px 250px;
+        padding: 15px;
+        font-size: 35px;
+        background: #fef5b9;
+        border-top: 2px dashed black;
+        border-left: 2px dashed black;
+        border-right: 2px dashed black;
+        letter-spacing: 1px;
+      }
+      p.mission{
+        margin: 0px 250px 40px 250px;
+        padding: 15px 100px 30px 100px;
+        word-spacing: 0.2px;
+        font-size: 22px;
+        background: #fef5b9;
+        border-bottom: 2px dashed black;
+        border-left: 2px dashed black;
+        border-right: 2px dashed black;
+      }
+      h2.problemHead{
+        padding: 15px;
+        margin: 15px 250px;
+        font-size: 35px;
+        letter-spacing: 1px;
+      }
+      p.problem{
+        margin: 10px 300px 40px 300px;
+        padding: 0;
+        font-size: 20px;
+        word-spacing: 0.5px;
+        letter-spacing: 0.15px;
+        line-height: 1.65;
+      }
+      div.factsImgDiv{
+        background: #2a2725;
+      }
+      h2.factsHead{
+        margin: 40px 0px 0px 0px;
+        padding: 30px;
+        background: #2a2725;
+        color: white;
+        font-size: 35px;
+        letter-spacing: 1px;
+      }
+      p.facts{
+        background: #2a2725;
+        margin: 0;
+        padding: 30px 300px;
+        color: white;
+        letter-spacing: 0.3px;
+        word-spacing: 0.2px;
+        font-size: 20px;
+        line-height: 1.65;
+      }
+      img.factsImg {
+        border-radius: 20px;
+        width: 700px; 
+      }
+      div.howParent{
+        display: flex;
+      }
+      h2.howHead{
+        padding: 40px 20px 20px 20px;
+        margin: 15px 250px;
+        font-size: 35px;
+        letter-spacing: 1.3px;
+        word-spading: 0.3px;
+      }
+      p.how{
+        margin: auto;
+        padding: 15px 50px 100px 50px;
+        font-size: 20px;
+        word-spacing: 0.5px;
+        letter-spacing: 0.15px;
+        line-height: 1.65;
+      }
+      img.howImg{
+        margin: auto;
+        padding: 0px 70px 100px 60px;
+        border-radius: 20px;
+        width: 400px;
+      }
+      h2.helpHead{
+        background: #281b0d; 
+        padding: 20px;
+        font-size: 35px;
+        letter-spacing: 1.3px;
+        word-spading: 0.3px;
+        color: #fffdf2;
+        margin: 0;
+      }
+      div.helpParent{
+        display: flex;
+        background-image: url(https://s.abcnews.com/images/US/bees-1-gty-jt-180720_hpMain_16x9t_992.jpg);
+      }
+      div.help1Div{
+        margin: auto 35px;
+        padding: 10px 80px 20px 80px;
+        font-size: 20px;
+        word-spacing: 0.5px;
+        letter-spacing: 0.15px;
+        line-height: 1.65;
+        width: 500px;
+        background: #fffdf2;
+        border-radius: 20px;
+      }
+      div.help2Div{
+        margin: 35px;
+        padding: 10px 70px;
+        width: 500px;
+        background: #fffdf2;
+        border-radius: 20px;
+      }
+      img.QRImg{
+        width: 200px;
+        background: #fffdf2;
+      }
+      h3.helpH1{
+        font-size: 31px;
+        background: #fffdf2;
+      }
+      p.helpP1{
+        font-size: 22px;
+        letter-spacing: 0.3;
+        line-height: 1.65;
+        background: #fffdf2;
+      }
+      div.dollarButtons{
+        background: #fffdf2;
+      }
+      h3.helpH2{
+        font-size: 31px;
+        background: #fffdf2;
+      }
+      p.helpP2{
+        font-size: 18px;
+        letter-spacing: 0.3;
+        line-height: 2;
+        background: #fffdf2;
+      }
+      div.footerParent{
+        display: flex;
+        padding: 15px;
+        background: #fef5b9;
+      }
+      p.footerEmail{
+        margin: auto;
+        font-size: 18px;
+      }
+      p.footerPhone{
+        margin: auto;
+        font-size: 18px;
+      }
+      img.footerLogo{
+        width: 50px;
+        border-radius: 150px;
+        border: 2px solid black;
+      }
+      h2.comingSoonHead{
+        padding: 30px 10px;
+        margin: 40px 270px;
+        font-size: 38px;
+        letter-spacing: 1.3px;
+        word-spading: 0.3px;
+        background: #fef5b9;
+        border: black dashed 2px;
+      }
+      div.comingSoonParent{
+        display: flex;
+        margin: 20px;
+      }
+      div.comingSoonDes{
+        margin: auto 0px auto 80px;
+        padding: 0px 40px 20px 60px;
+        font-size: 20px;
+        word-spacing: 0.5px;
+        letter-spacing: 0.15px;
+        line-height: 1.65;
+        width: 500px;
+      }
+      div.app{
+        margin: 70px 40px 40px 35px;
+        padding: 80px 70px 70px 70px;
+        width: 500px;
+      }
+      h3.comingSoonMinHead{
+        font-size: 31px;
+      }
+      p.comingSoon{
+        font-size: 22px;
+        letter-spacing: 0.3;
+        line-height: 1.65;
+      }
+      img.appImg{
+        width: 220px;
+        border-radius: 15px;
+      }
+      h3.appName{
+        margin: 20px;
+        font-size: 33px;
+        letter-spacing: 0.5px;
+      }
+    </style>
+  </head>
+  <center>
+    <body>
+      <div class = header>
+        <h1> <span style="color:#444444">Hive</span> <span style = "color:#ffffff">Hub </span> </h1>
+        <img class = logo src = "https://previews.dropbox.com/p/thumb/AA1W03wB7BD-DGGRy8_OlETjBR7crJ9gbRXws7_ECrYj9x4lpHrgF1V8kflhwN1ShI-ctDpTIDnBrJhWMUT8MlJudbsLMMSfWfyeDoBVMyXtM4oJXQ8tOuBb9XFQISVrZ549sc2_jddOz4hvsMTrYrfu8Tz1XP9S6NwvxCLj00vYA6NFEuQrIdf8BEgRlWtFAKjAxRkLzvLjy3CBBwBEcNEDutbZUuhtUD42CKU6v5uW3iyvf98nRicd7bACUwioHT4FUGzvV1kRYA0_rRJzTa6NKt2sXyCnRw86x4cEQS-ZSvxNbeSjopfPh7HPr5N_PhncISi7O_UrGI541lVT_SgEVhTbCP-mtvvCesLhLzLNoQ/p.png?fv_content=true&size_mode=5" atp = "Hive Hub Logo">
+      </div>
+      <img class = headerImg src = "https://image.freepik.com/free-photo/macro-photo-bee-hive-honeycomb-with-copyspace-bees-produce-fresh-healthy-honey_168410-368.jpg" alt = "Honeybee on a hive">
+      <h2 class = missionHead>Our Mission</h2>
+      <p class = mission>
+        To protect and increase the population of honey bees in the US.
+      </p>
+      <h2 class = problemHead>The Problem</h2>
+      <p class = problem>
+        Bee populations have been on the decline for decades. One of the leading causes, beside pesticideas and climate change, is the destruction of their natural habitats. Bees thrive in places like hedgerows and fields of wildflowers, but these environments have been destroyed by infrastructure and urban development. By destroying these environments, not only do bees lose room for foraging and nesting, the quality of the remaining areas can degrade both quickly and exponentially. Also, fragmenting their habitats isolates their species, reducing both the gene flow and genetic diversity in that species. This in turn can increase the bees' vulnerability to parasites and disease. As a result of all these factors, bee population has dropped about 3.6 million hives since 1950, and continues to decline.
+      </p>
+      <h2 class = factsHead>
+       The Un-"Bee"-lievable Truth
+      </h2>
+      <div class = factsImgDiv>
+        <img class = factsImg src =     "https://nitrocdn.com/VRIeDFBZwbZiSpUJcJPgvxtHpuRuggWY/assets/static/source/wp-content/uploads/2019/07/c02f43cd3123f4f9d37dace74e9bbfea.bee-flower-35.jpg" alt = "Honeybee on a flower">
+      </div>
+      <p class = facts>
+        Bees are pollinators, animals that move pollen between plants, which enables those plants to reproduce. 90% of all wild plants and 75% of crops worldwide rely on pollinators. These animals have contributed an estimated 235-577 billion dollars to the US alone in agriculture expenses, and bees are responsible for 80% of all this. Because bees need pollen to feed their young, they are more efficient and hard working than any other pollinator.  
+      </p> 
+      <h2 class = howHead>Our Plan</h2>
+      <div class = howParent>
+        <div class = howDiv>
+        <p class = how>
+          Our goal is to increase the number of beehives located around the US by recording where they already exist, and finding suitable locations for other beehives to be built or relocated. Users can log any beehives they find, whether its in the park or in their backyard. This data is then compiled onto a map, showing the distribution of the bee population. We hope to inspire people to work in their area to bring beehives to places that have too few. Whether it be through sponsoring the construction of a hive through our site, providing a safe environment for a hive to be built, or simply spreading information and awareness, individuals can help increase the honey bee populations in the US.
+        </p>
+        </div>
+        <div class = howImgDiv><img class = howImg src = "https://previews.dropbox.com/p/thumb/AA20I-58qcjkThYvsKjPISpQ-mXcuIPUpQ8dkUyw1wUAZdqh16dYStiS-LO2QYzWNIKRIb-WiFdm03klH81yfLifa9jaVMB1xEp7ne6FDq0N11MU_Ak7vfn2oStklFZE_rLCIEeU_QXnwnhcYb_vpKsHrqCAHONjzXItp2MTT37ocYzAZpDcXoL6Uvcb_yZPReLQ0_jROu9xSkvDXgiLUpOwMeuXn_fvfgyhRPeabtsJyXbEf0DWgsIAktXMG8rugrlUCI5ZFD-VaMlF-6tqQU-qjEi2vM4wFq_3feqDR9ALH2pqAeWzJimE1yNZIQLbuHrZKRdFwySQWMw3jQhTNCPvcrhMUhyNDwNS6Ct3kRDWag/p.png?fv_content=true&size_mode=5" alt = "Beehive Map"></div>
+      </div>
+      <h2 class = helpHead>How You Can Help</h2>
+      <div class = helpParent>
+        <div class = help1Div>
+          <h3 class = helpH1>Sponsor a Hive</h3>
+          <p class = helpP1>
+            If you would like to make a donation, choose a dollar amount listed below, or input a custom amount. Once your payment is finalized, we will send you photos and status updates of the beehive your payment will be helping to build.
+          </p>
+          <div class = dollarButtons>
+            <button class = 1>$1</button>
+            <button class = 5>$5</button>
+            <button class = 20>$20</button>
+            <button class = 100>$100</button>
+            <input class = custom>
+          </div>
+        </div>
+        <div class = help2Div>
+          <h3 class = helpH2>Build a Hive</h3>
+          <p class = helpP2>
+            If you would like to host a hive, or have an idea of a location where a hive could be transfered or built, you can scan the code below to access our augmented reality hive. Using your camera to scan the code, a link should pop up which will let you access the model hive. You can move the hive around your surroundings, change its size, and take pictures of it. You can submit these photos (through email) and we will contact you if the environment is suitable for a hive.
+          </p>
+          <img class = QRImg src = "https://previews.dropbox.com/p/thumb/AA0LX_YM8DKMQbueDK4WTtRObpfSTjhC-5BIl9et9c6G8qTvcVKqGM1Nu5Vjm57050KpYvXm1CZ3Vdo7olPDIymfu-LxgRSzO6cFq2pD_ERbR1XLmohw26B5Ub6DKXiqOHNLhJ4MnyOjx-jQMkUVpp7agakIBPbLC4-THhbQK2ID_bsBgmUm-H5e_CZ5bzjwla2ek5xNRy1T-MmaGTyLDNHsojs1x0g7FES90r59IcPNacLUuvIrpaWp0jkzGuf6lHDPiImQH81B-_Oe0eUObDU-7YZuU3pf_ZG-NTnRorMkPsiDHha8GfyobI_sOvo7zkwbadkGp8DE2f51ofbCvBjau7WLJYqXULzTCGloP6f7SQ/p.png?fv_content=true&size_mode=5" alt = "Model Beehive QR Code">
+        </div>
+      </div>
+      <h2 class = comingSoonHead>Coming Soon!!</h2>
+      <div class = comingSoonParent>
+        <div class = comingSoonDes>
+          <h3 class = comingSoonMinHead>Hive Hub the App</h3>
+          <p class = comingSoon>
+            For community awareness and outreach, and for   education purposes...our app will bring beehive tracking, protection, and sponsorship, to a greater number of children and adults alike. Our app will include mini games that will spread awareness about the problem and educate people on bees' importance, as well as a stream where photos of bee hives in various areas, or photos of personal hives, can be posted. Using a point system with various rewards (TBD), we will encourage people to support the protection and growth of the honey bee population in the US.
+          </p>
+        </div>
+        <div class = app>
+          <img class = appImg src = "https://previews.dropbox.com/p/thumb/AA3nGV1f4xkw6VXrLPn5XL-9Zp7xqHbMRQCGAJsJxMc8lkwy1m_0zpLPra3vMYVR1uGIHHStUavHo-PhQYHGQcw4hfYbuhUZY8WVAY_ZVR63AOvWL1aJekaAA6oDUEJQOrpKGvOOuGmBnYYX7cC4c6CR1lxP6bG9LUPiPbZO3OQAlLsoszNzSoa2zMcZvCn-2l6LQjtGTLg3cIrA9414S_Z3uAVX8NlNXBseyDCCvJk7GaixQA2dwVU55itMyQb3mAVfwQWKxsJjGhYHphuqU8Mbgm-qOr07U38KtCWwJRYk1_gK9rtLOrSDN8WZOqcZTtVCsnjKaKfk2QhB_kCJmpT4J5UJnmTLaiOvKGyMhnf5sg/p.png?fv_content=true&size_mode=5" alt = "App Image">
+          <h3 class = appName>HiveHub</h3>
+        </div>
+      </div>
+      <div class = footerParent>
+        <p class = footerEmail>
+          Email: hivehub1@gmail.com
+        </p>
+        <img class = footerLogo src = "https://previews.dropbox.com/p/thumb/AA1W03wB7BD-DGGRy8_OlETjBR7crJ9gbRXws7_ECrYj9x4lpHrgF1V8kflhwN1ShI-ctDpTIDnBrJhWMUT8MlJudbsLMMSfWfyeDoBVMyXtM4oJXQ8tOuBb9XFQISVrZ549sc2_jddOz4hvsMTrYrfu8Tz1XP9S6NwvxCLj00vYA6NFEuQrIdf8BEgRlWtFAKjAxRkLzvLjy3CBBwBEcNEDutbZUuhtUD42CKU6v5uW3iyvf98nRicd7bACUwioHT4FUGzvV1kRYA0_rRJzTa6NKt2sXyCnRw86x4cEQS-ZSvxNbeSjopfPh7HPr5N_PhncISi7O_UrGI541lVT_SgEVhTbCP-mtvvCesLhLzLNoQ/p.png?fv_content=true&size_mode=5" atc = "Hive Hub Logo">
+        <p class = footerPhone>
+          Phone: +1 (888) HiveHub
+        </p>
+      </div>
+    </body>
+  </center>
+</html>
